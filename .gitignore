@@ -3,6 +3,7 @@ Logs
 Temp
 UserSettings
 obj
+dist
 Assets/TextMesh Pro*
 *.sln
 *.csproj
