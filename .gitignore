@@ -1,0 +1,8 @@
+Library
+Logs
+Temp
+UserSettings
+obj
+Assets/TextMesh Pro*
+*.sln
+*.csproj
