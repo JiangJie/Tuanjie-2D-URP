@@ -52,8 +52,8 @@ MonoBehaviour:
     Il2CppOptimizeSize: 1
     profilingFuncs: 0
     Webgl2: 1
-    fbslim: 0
-    DeleteStreamingAssets: 1
+    fbslim: 1
+    DeleteStreamingAssets: 0
     ProfilingMemory: 0
     CleanBuild: 0
     CustomNodePath: 
