@@ -1,4 +1,5 @@
 using UnityEditor;
+using UnityEngine;
 
 public static class CIBuild
 {
@@ -10,12 +11,32 @@ public static class CIBuild
             "Assets/Scenes/App.scene",
         };
 
-        BuildPipeline.BuildPlayer(scenes, "dist/webgl", BuildTarget.WebGL, BuildOptions.None);
+        var res = BuildPipeline.BuildPlayer(scenes, "dist/webgl", BuildTarget.WebGL, BuildOptions.None);
+
+        Debug.Log($"BuildPlayer res: {res.summary.result}");
+        if (res.summary.result == UnityEditor.Build.Reporting.BuildResult.Succeeded)
+        {
+            Debug.Log("构建成功");
+        }
+        else
+        {
+            Debug.LogError("构建失败");
+        }
     }
 
     [MenuItem("Build/WeixinMiniGame", false, 1)]
     public static void BuildWeixinMiniGame()
     {
-        WeChatWASM.WXConvertCore.DoExport(true);
+        var res = WeChatWASM.WXConvertCore.DoExport(true);
+
+        Debug.Log($"DoExport res: {res}");
+        if (res == WeChatWASM.WXConvertCore.WXExportError.SUCCEED)
+        {
+            Debug.Log("构建成功");
+        }
+        else
+        {
+            Debug.LogError("构建失败");
+        }
     }
 }
