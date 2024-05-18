@@ -11,6 +11,8 @@ public class App : MonoBehaviour
 
     private void Awake()
     {
+        Debug.Log("App Awake");
+
         m_txt.text = "Hello Tuanjie!";
 
         var key = "Res/Main.prefab";
@@ -27,6 +29,8 @@ public class App : MonoBehaviour
 
     private void OnDestroy()
     {
+        Debug.Log("App OnDestroy");
+
         Addressables.Release(opHandle);
     }
 }

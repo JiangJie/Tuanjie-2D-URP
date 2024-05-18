@@ -7,6 +7,8 @@ public class Main : MonoBehaviour
 
     private void Awake()
     {
+        Debug.Log("Main Awake");
+
         m_txt.text = "Tuanjie Main!";
     }
 }
