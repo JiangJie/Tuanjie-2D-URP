@@ -3,6 +3,7 @@ using UnityEngine;
 
 public static class CIBuild
 {
+    [MenuItem("Build/WeixinMiniGame", false, 1)]
     public static void BuildWeixinMiniGame()
     {
         // string[] scenes =
