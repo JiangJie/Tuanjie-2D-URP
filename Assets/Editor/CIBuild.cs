@@ -1,21 +1,21 @@
 using UnityEditor;
-using UnityEngine;
 
 public static class CIBuild
 {
+    [MenuItem("Build/WebGL", false, 1)]
+    public static void BuildWebGL()
+    {
+        string[] scenes =
+        {
+            "Assets/Scenes/App.scene",
+        };
+
+        BuildPipeline.BuildPlayer(scenes, "dist/webgl", BuildTarget.WebGL, BuildOptions.None);
+    }
+
     [MenuItem("Build/WeixinMiniGame", false, 1)]
     public static void BuildWeixinMiniGame()
     {
-        // string[] scenes =
-        // {
-        //     "Assets/Scenes/SampleScene.unity",
-        // };
-
-        // var buildPath = "dist";
-
-        // BuildPipeline.BuildPlayer(scenes, buildPath, BuildTarget.WeixinMiniGame, BuildOptions.None);
-        // Debug.Log("Build completed successfully.");
-
         WeChatWASM.WXConvertCore.DoExport(true);
     }
 }
