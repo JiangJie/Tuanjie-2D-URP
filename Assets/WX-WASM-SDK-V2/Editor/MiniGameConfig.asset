@@ -19,7 +19,7 @@ MonoBehaviour:
     assetLoadType: 1
     compressDataPackage: 0
     VideoUrl: 
-    DST: D:/Code/Tuanjie-2D-URP/dist
+    DST: dist
     StreamCDN: 
     bundleHashLength: 32
     bundlePathIdentifier: StreamingAssets;
