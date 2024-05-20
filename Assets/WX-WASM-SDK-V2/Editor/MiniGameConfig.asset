@@ -15,7 +15,7 @@ MonoBehaviour:
   ProjectConf:
     projectName: "\u56E2\u7ED3\u5C0F\u6E38\u620F"
     Appid: wxd0e404d795ea6f80
-    CDN: http://localhost:5000
+    CDN: http://localhost:5000/webgl
     assetLoadType: 1
     compressDataPackage: 0
     VideoUrl: 
