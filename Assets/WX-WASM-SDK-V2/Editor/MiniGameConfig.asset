@@ -15,9 +15,9 @@ MonoBehaviour:
   ProjectConf:
     projectName: "\u56E2\u7ED3\u5C0F\u6E38\u620F"
     Appid: wxd0e404d795ea6f80
-    CDN: http://localhost:5000/webgl
-    assetLoadType: 1
-    compressDataPackage: 0
+    CDN: https://ddztestcgi.huanle.qq.com/hlddztest/hlddz-cdn/tuanjie_hello
+    assetLoadType: 0
+    compressDataPackage: 1
     VideoUrl: 
     DST: dist
     StreamCDN: 
@@ -28,7 +28,7 @@ MonoBehaviour:
     MemorySize: 64
     HideAfterCallMain: 1
     preloadFiles: 
-    Orientation: 0
+    Orientation: 1
     bgImageSrc: Assets/WX-WASM-SDK-V2/Runtime/wechat-default/images/background.jpg
     dataFileSubPrefix: 
     maxStorage: 200
@@ -36,7 +36,7 @@ MonoBehaviour:
     texturesHashLength: 8
     texturesPath: Assets/Textures
     needCacheTextures: 1
-    loadingBarWidth: 240
+    loadingBarWidth: 500
     needCheckUpdate: 0
     disableHighPerformanceFallback: 0
     IOSDevicePixelRatio: 0
